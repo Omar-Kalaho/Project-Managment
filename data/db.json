@@ -1,0 +1,43 @@
+{
+  "students": [
+    {
+      "name": " Jad Hadaya",
+      "email": " jadhadaya@sabis.net",
+      "studentNo": "1184",
+      "projects": [1]
+    },
+    {
+      "name": "Laith Alsayed",
+      "email": " laithalsayed@sabis.net",
+      "studentNo": "2248",
+      "projects": [1]
+    },
+    {
+      "name": "Firas Alkadri",
+      "email": " firasalkadri@sabis.net",
+      "studentNo": "1688",
+      "projects": [1]
+    }
+  ],
+
+  "admins": [
+    {
+      "name": "Shaun",
+      "email": "shaun@sabis.net"
+    },
+    {
+      "name": "Youceif",
+      "email": "Youceif@sabis.net"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "description": "This is the first project",
+      "students": [1688, 2248, 1184],
+      "admin": "Shaun"
+    }
+  ]
+}
