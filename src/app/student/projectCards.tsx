@@ -20,12 +20,13 @@ const GetProjects = async () => {
 const ProjectCards = async () => {
   let projects: ProjectCardData[] = await GetProjects();
   let projectCards = projects.map((project, index) => {
+    let image : string = project.imageFile as unknown as string
     return (
       <Link key={project._id} className="w-full" href={`/student/${project._id}`}>
         <div className="w-full  h-[200px] flex transform  transition-transform  cursor-pointer duration-1000 hover:scale-105 bg-green-900 bg-opacity-5 hover:bg-opacity-20">
           <div className="w-1/3 relative">
             <Image
-              src={project.imageFile}
+              src={image}
               alt="Project Image"
               
               fill
@@ -62,3 +63,5 @@ type ProjectCardData = {
   date: { from: Date; to: Date };
   imageFile: File;
 };
+
+
