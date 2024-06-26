@@ -18,7 +18,7 @@ type Props = {
 
 const DragImageArea: React.FC<Props> = ({ state, dispatch }) => {
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    let reader = new FileReader();
+    let reader:any = new FileReader();
     reader.readAsDataURL(event.target.files[0]);
     reader.onload = () => {
       const file = reader.result;
