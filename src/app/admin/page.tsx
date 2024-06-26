@@ -39,7 +39,7 @@ const Page: React.FC<PageProps> = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch("http://localhost:3001/api/admin/projects", {
+      const res = await fetch("/api/admin/projects", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

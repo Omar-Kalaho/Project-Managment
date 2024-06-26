@@ -2,12 +2,7 @@
 // import React, { useState } from "react";
 import CompleteProject from "./completeProject";
 
-interface ProjectPageProps {
-  projectId: string;
-  projectTitle: string;
-  projectDescription: string;
-  projectVideoUrl: string;
-}
+
 
 function extractVideoID(url:String) {
     let videoID = '';
@@ -19,11 +14,11 @@ function extractVideoID(url:String) {
     return videoID;
 }
 
-const ProjectPage: React.FC<ProjectPageProps> = async ({params}:any) => {
+const ProjectPage = async ({params}:any) => {
 
     const GetProject = async () => {
         try {
-          let res = await fetch(`http://localhost:3001/api/student/projects/${params.project}`, {
+          let res = await fetch(`/api/student/projects/${params.project}`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json",

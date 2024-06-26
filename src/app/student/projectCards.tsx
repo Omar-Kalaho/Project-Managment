@@ -4,7 +4,7 @@ import { ObjectId } from "mongodb";
 import Link from "next/link";
 const GetProjects = async () => {
   try {
-    let res = await fetch("http://localhost:3001/api/student/projects", {
+    let res = await fetch("/api/student/projects", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
