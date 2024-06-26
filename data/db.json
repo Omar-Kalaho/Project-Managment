@@ -34,9 +34,20 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project 1",
-      "description": "This is the first project",
+      "title": "Water Power",
+      "description": "Each team is going to build a waterwheel as a source of alternative or renewable energy source. Then, each team will measure the efficiency of its model by calculating the rate of spinning of the wheel in a specific time. ",
       "students": [1688, 2248, 1184],
+      "startDate": "2020-10-01",
+      "endDate": "2020-10-30",
+      "admin": "Shaun"
+    },
+    {
+      "id": 1,
+      "title": "Water Power",
+      "description": "Each team is going to build a waterwheel as a source of alternative or renewable energy source. Then, each team will measure the efficiency of its model by calculating the rate of spinning of the wheel in a specific time. ",
+      "students": [1688, 2248, 1184],
+      "startDate": "2020-10-01",
+      "endDate": "2020-10-30",
       "admin": "Shaun"
     }
   ]
