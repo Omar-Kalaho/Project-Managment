@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import image1 from "/src/app/student/project/image1.jpg";
 import { ObjectId } from "mongodb";
