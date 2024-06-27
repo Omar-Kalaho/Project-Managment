@@ -1,4 +1,4 @@
-"use client"
+
 import Image from "next/image";
 import image1 from "/src/app/student/project/image1.jpg";
 import { ObjectId } from "mongodb";
@@ -20,7 +20,7 @@ const GetProjects = async () => {
 
 const ProjectCards = async () => {
   let projects: ProjectCardData[] = await GetProjects();
-  let projectCards = projects.map((project, index) => {
+  let projectCards = projects?.map((project, index) => {
     let image : string = project.imageFile as unknown as string
     return (
       <Link key={project._id} className="w-full" href={`/student/${project._id}`}>
