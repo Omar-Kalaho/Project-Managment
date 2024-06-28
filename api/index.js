@@ -32,6 +32,9 @@ async function run() {
     });
 
     //routes
+    app.get("/", (req, res) => {
+      res.send("Hello World!");
+    });  
     app.use("/api/admin", adminRouter);
     app.use("/api/student", studentRouter);
     app.use("/api/user", userRouter);
