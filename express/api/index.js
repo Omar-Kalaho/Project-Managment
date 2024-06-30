@@ -47,5 +47,5 @@ async function run() {
     console.error("Error connecting to MongoDB:", error);
   }
 }
-run().catch(console.dir);
+await run().catch(console.dir);
 module.exports = app;
