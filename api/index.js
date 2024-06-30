@@ -10,7 +10,7 @@ const studentRouter = require("./routes/student");
 const adminRouter = require("./routes/admin");
 const userRouter = require("./routes/user");
 
-async function run() {
+
   try {
     // Connect the client to the server	(optional starting in v4.7)
     const db = await connectToDb();
@@ -46,7 +46,5 @@ async function run() {
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
   }
-}
 
-run().catch(console.dir);
 module.exports = app;
