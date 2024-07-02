@@ -10,15 +10,10 @@ const studentRouter = require("./routes/student");
 const adminRouter = require("./routes/admin");
 const userRouter = require("./routes/user");
 
-async function run() {
-  try {
+
     // Connect the client to the server	(optional starting in v4.7)
-    const db = await connectToDb();
-    // Send a ping to confirm a successful connection
-    await db.command({ ping: 1 });
-    console.log(
-      "Pinged your deployment. You successfully connected to MongoDB!"
-    );
+   connectToDb().then(()=>{
+    
 
     //middlewar
 
@@ -43,9 +38,8 @@ async function run() {
     app.listen(3001, () => {
       console.log("Server is running on port 3001");
     });
-  } catch (error) {
-    console.error("Error connecting to MongoDB:", error);
   }
-}
-run().catch(console.dir);
+   ,(error)=>{console.error("Error connecting to MongoDB:", error);})
+    // Send a ping to confirm a successful connection
+     
 module.exports = app;
